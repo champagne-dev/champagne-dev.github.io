@@ -1,0 +1,201 @@
+html{
+	background: linear-gradient(rgba(0, 0, 0, .85),rgba(0, 0, 0, .75)), url(img/bubbles.gif) no-repeat center center fixed; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	margin: 0;
+}
+body{
+	margin: 0;
+	text-align: center;
+	position: relative;
+}
+body > div.header{
+	margin: auto;
+	color: white;
+	text-align: center;
+	width: 260px;
+	max-width: 100%;
+}
+body > div.header > .text{
+	margin: 0;
+	font-family: "Open Sans";
+	display: block;
+}
+body > div.header > h3.text{
+	font-size: 50px;
+
+}
+body > div.header > h4.text{
+	margin-top: 5px;
+	text-align: right;
+	font-size: 15px;
+}
+body > a.profile-link{
+	position: absolute;
+	top: 0;
+	background-color: rgb(220,220,220);
+	width: 65px;
+	height: 65px;
+	margin: 0;
+	text-decoration: none;
+	cursor: pointer;
+	-webkit-transition: background-color .05s linear;
+    -o-transition: background-color .05s linear;
+    -moz-transition: background-color .05s linear;
+    -ms-transition: background-color .05s linear;
+    -kthtml-transition: background-color .05s linear;
+    transition: background-color .05s linear;
+}
+body > a.profile-link:hover{
+	background-color: rgb(255,255,255);
+}
+body > a.profile-link > h3.initials{
+	font-size: 30px;
+	text-align: center;
+	font-family: "Open Sans";
+	position: relative;
+	top: -20px;
+	color: rgb(40,40,40);
+}
+body > a.profile-link.ch{
+	left: 0;
+	border-bottom-right-radius: 5px;
+}
+body > a.profile-link.jw{
+	right: 0;
+	border-bottom-left-radius: 5px;
+}
+body > a.profile-link.ch > h3.initials{
+	left: -2px;
+}
+body > a.profile-link.jw > h3.initials{
+	right: -3px;
+}
+body > div.projects-container{
+	max-width: 90%;
+	height: auto;
+	margin: 0 auto;
+	text-align: center;
+	margin-top: 40px;
+	display: block;
+	overflow: auto;
+	padding: 0;
+	width: 1250px;
+}
+body > div.projects-container > div.project{
+	width: 400px;
+	max-width: calc(100% - 6px);
+	height: 310px;
+	margin: 0;
+	padding: 3px;
+	cursor: pointer;
+	float: left;
+}
+body > div.projects-container > div.project > div.inner{
+	background-color: #eee;
+	border: 1px solid #aaa;
+	width: 100%;
+	height: 190px;
+	padding-top: 120px;
+	-webkit-box-shadow: inset 0px 0px 14px 2px rgba(0,0,0,0.75);
+	-moz-box-shadow: inset 0px 0px 14px 2px rgba(0,0,0,0.75);
+	box-shadow: inset 0px 0px 14px 2px rgba(0,0,0,0.75);
+	-webkit-transition: all .1s linear;
+    -o-transition: all .1s linear;
+    -moz-transition: all .1s linear;
+    -ms-transition: all .1s linear;
+    -kthtml-transition: all .1s linear;
+    transition: all .1s linear;
+    overflow: hidden;
+    position: relative;
+}
+body > div.projects-container > div.project > div.inner:hover{
+	-webkit-box-shadow: inset 0px 0px 25px 2px rgba(0,0,0,0.75);
+	-moz-box-shadow: inset 0px 0px 25px 2px rgba(0,0,0,0.75);
+	box-shadow: inset 0px 0px 25px 2px rgba(0,0,0,0.75);
+}
+body > div.projects-container > div.project > div.inner:hover > div.links{
+	right: 0;
+}
+body > div.projects-container > div.project > div.inner > div.links{
+	width: auto;
+	height: auto;
+	position: absolute;
+	right: -200px;
+	top: 0;
+	margin: 0;
+	-webkit-transition: right .400px linear;
+    -o-transition: right .3s linear;
+    -moz-transition: right .3s linear;
+    -ms-transition: right .3s linear;
+    -kthtml-transition: right .3s linear;
+    transition: right .3s linear;
+}
+body > div.projects-container > div.project > div.inner > div.links > a.link{
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+	padding: 15px;
+	position: relative;
+	margin: 0;
+}
+body > div.projects-container > div.project > div.inner > div.links > a.link.hidden{
+	display: none;
+}
+body > div.projects-container > div.project > div.inner > div.links > a.link:hover > img.pic{
+	background-color: rgba(255, 78, 80, .2);
+}
+body > div.projects-container > div.project > div.inner > div.links > a.link > img.pic{
+	height: 100%;
+	width: auto;
+	margin: 0;
+	text-align: center;
+	border-radius: 30px;
+}
+body > div.projects-container > div.project > div.inner > div.content{
+	margin: auto;
+	height: 70px;
+	width: auto;
+	text-align: center;
+}
+body > div.projects-container > div.project > div.inner > div.content > img.logo{
+	height: 100%;
+	width: auto;
+}
+body > div.projects-container > div.project > div.inner > div.content > img.logo.champics{
+	height: 100%;
+	width: auto;
+}
+@media (max-width: 1353px) {
+  body > div.projects-container {
+    width: 830px;
+  }
+}
+@media (max-width: 902px) {
+  body > div.projects-container {
+    width: 400px;
+  }
+  body > div.projects-container > div.project {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  body > a.profile-link{
+  	width: 40px;
+  	height: 40px;
+  }
+  body > a.profile-link > h3.initials{
+  	font-size: 20px;
+  	top: -15px;
+  }
+}
+
+
+
+
+
+
+
+
+
