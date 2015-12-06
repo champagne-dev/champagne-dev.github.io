@@ -191,7 +191,14 @@ body > div.projects-container > div.project > div.inner > div.content > img.logo
   	top: -15px;
   }
 }
-
+@media (max-width: 400px) {
+  body > div.header > h3.text{
+  	font-size: 30px;
+  }
+  body > div.header{
+  	width: 155px;
+  }
+}
 
 
 
