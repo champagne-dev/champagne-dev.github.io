@@ -10,6 +10,7 @@ body{
 	margin: 0;
 	text-align: center;
 	position: relative;
+	padding-bottom: 300px;
 }
 body > div.header{
 	margin: auto;
