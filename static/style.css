@@ -18,6 +18,7 @@ body > div.header{
 	text-align: center;
 	width: 260px;
 	max-width: 100%;
+	padding-top: 40px;
 }
 body > div.header > .text{
 	margin: 0;
@@ -36,7 +37,7 @@ body > div.header > h4.text{
 body > a.profile-link{
 	position: absolute;
 	top: 0;
-	background-color: rgb(220,220,220);
+	background-color: rgb(230,230,230);
 	width: 65px;
 	height: 65px;
 	margin: 0;
@@ -53,6 +54,7 @@ body > a.profile-link:hover{
 	background-color: rgb(255,255,255);
 }
 body > a.profile-link > h3.initials{
+	width: 30px;
 	font-size: 30px;
 	text-align: center;
 	font-family: "Open Sans";
@@ -69,10 +71,10 @@ body > a.profile-link.jw{
 	border-bottom-left-radius: 5px;
 }
 body > a.profile-link.ch > h3.initials{
-	left: -2px;
+	left: 15%;
 }
 body > a.profile-link.jw > h3.initials{
-	right: -3px;
+	right: -24%;
 }
 body > div.projects-container{
 	max-width: 90%;
@@ -95,7 +97,7 @@ body > div.projects-container > div.project{
 	float: left;
 }
 body > div.projects-container > div.project > div.inner{
-	background-color: #eee;
+	background-color: rgb(250,250,250);
 	width: 100%;
 	height: 190px;
 	padding-top: 120px;
@@ -112,9 +114,10 @@ body > div.projects-container > div.project > div.inner{
     position: relative;
 }
 body > div.projects-container > div.project > div.inner:hover{
-	-webkit-box-shadow: inset 0px 0px 25px 2px rgba(0,0,0,0.75);
-	-moz-box-shadow: inset 0px 0px 25px 2px rgba(0,0,0,0.75);
-	box-shadow: inset 0px 0px 25px 2px rgba(0,0,0,0.75);
+	background-color: rgba(250,250,250, .9);
+	-webkit-box-shadow: inset 0px 0px 15px 2px rgba(0,0,0,0.75);
+	-moz-box-shadow: inset 0px 0px 15px 2px rgba(0,0,0,0.75);
+	box-shadow: inset 0px 0px 15px 2px rgba(0,0,0,0.75);
 }
 body > div.projects-container > div.project > div.inner:hover > div.links{
 	right: 0;
